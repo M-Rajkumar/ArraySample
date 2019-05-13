@@ -1,0 +1,57 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!--margin values-->
+    <dimen name="margin_extra_very_small">4dp</dimen>
+    <dimen name="margin_very_small">6dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">10dp</dimen>
+    <dimen name="margin_large">12dp</dimen>
+    <dimen name="margin_very_large">14dp</dimen>
+    <dimen name="margin_extra_very_large">16dp</dimen>
+
+
+    <!--padding values-->
+
+    <dimen name="padding_extra_very_small">4dp</dimen>
+    <dimen name="padding_very_small">6dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">10dp</dimen>
+    <dimen name="padding_large">12dp</dimen>
+    <dimen name="padding_very_large">14dp</dimen>
+    <dimen name="padding_extra_very_large">16dp</dimen>
+
+
+    <!--text size values-->
+    <dimen name="text_extra_very_small">8sp</dimen>
+    <dimen name="text_very_small">10sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_large">16sp</dimen>
+    <dimen name="text_very_large">18sp</dimen>
+    <dimen name="text_mega">20sp</dimen>
+
+
+   <!-- Availablity screen-->
+    <dimen name="product_arrow_width">35dp</dimen>
+    <dimen name="product_arrow_height">25dp</dimen>
+    <dimen name="Status_border_height">2dp</dimen>
+    <dimen name="Status_calendar_border_height">1dp</dimen>
+    <dimen name="addtimebutton">35dp</dimen>
+    <dimen name="recurrencebuton">20dp</dimen>
+    <dimen name="margin_Gocalenderbtn">40dp</dimen>
+    <dimen name="alldays_switch">30dp</dimen>
+    <dimen name="recurrencebutton">20dp</dimen>
+    <dimen name="availabilityback">40dp</dimen>
+    <dimen name="availabilitytimericon">20dp</dimen>
+
+
+    <dimen name="pager_margin">5dp</dimen>
+
+</resources>

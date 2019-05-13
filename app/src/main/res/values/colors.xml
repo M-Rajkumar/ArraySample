@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#389895</color>
+    <color name="colorAccent">#389895</color>
+
+    <!-- <color name="button_bg_send_request">#FF636363</color>-->
+
+    <color name="maincolor">#389895</color>
+    <color name="delred">#fc5b5b</color>
+    <color name="acptgreen">#8ccf9c</color>
+    <color name="mediumgreen">#5cc7c3</color>
+    <color name="bg_grey">#e4e7f0</color>
+
+    <color name="red">#e20f19</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="gray">#837b7b</color>
+    <color name="bordergray">#666666</color>
+    <color name="maingray">#e4e7f0</color>
+    <color name="ringgray">#c4cbde</color>
+    <color name="detailgray">#e6e6e6</color>
+
+
+    <color name="buttondeselect">#c4cbde</color>
+    <color name="buttonselect">#389895</color>
+
+
+    <color name="toolbargray">#e9e9e9</color>
+    <color name="graytrans">#97706C6C</color>
+
+
+    <color name="rd_theme_light_blue">#0378b5</color>
+    <color name="lock">#004f7a</color>
+    <color name="rd_theme_blue">#025583</color>
+
+
+    <color name="greyselect">#e9e9e9</color>
+    <color name="greyselecttext">#999999</color>
+
+
+    <color name="mainred">#04cfc7</color>
+    <color name="mainblue">#1cc6f4</color>
+    <color name="mainvioloet">#00628d</color>
+
+    <color name="yellow">#f8bf1d</color>
+    <color name="lightblue">#a1d2e2</color>
+    <color name="darkblue">#1178B3</color>
+
+    <color name="maingreen">#85ce9b</color>
+    <color name="darkgray">#161616</color>
+
+
+    <color name="transparent">#00000000</color>
+    <color name="transparentgray">#b1383737</color>
+
+    <color name="transbg">#bfc1c0c0</color>
+
+
+    <!--availablity-->
+    <color name="availabilitybg">#FFE5E5E5</color>
+    <color name="statustext">#FF02DF60</color>
+    <color name="statusborder">#FF8DC1BE</color>
+    <color name="status_button">#FFE5E5E5</color>
+    <color name="status_button_offline">#FF999999</color>
+    <color name="status_partialy_online">#FFF9B102</color>
+    <color name="status_online">#FF02E161</color>
+    <color name="status_donline">#FFCBCBCB</color>
+    <color name="arrowcolor">#ebeff0</color>
+    <color name="deletecolor">#FFCBCBCB</color>
+    <color name="alldaythumb">#edf0f0f0</color>
+    <color name="alldaytrack">#FFCBCBCB</color>
+
+
+
+</resources>
