@@ -1,18 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#000"
+    android:padding="5dp"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:layout_margin="16dp">
+    <view
+        android:id="@+id/android_fab_with_circular_progress_ring"
+        class="mbanje.kurt.fabbutton.FabButton"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:clickable="true"
+        android:color="?attr/colorPrimaryDark"
+        android:indeterminate="false"
+        android:indeterminateDuration="1000"
+        android:max="100"
+        android:progress="80"
+        android:src="@drawable/james"
+        android:visibility="visible"
 
-</android.support.constraint.ConstraintLayout>
+        app:fbb_autoStart="true"
+        app:fbb_endBitmap="@drawable/ic_fab_complete"
+        app:fbb_hideProgressOnComplete="false"
+        app:fbb_progressColor="#ff00"
+        app:fbb_progressWidthRatio="0.1"
+        app:fbb_showEndBitmap="false"
+        app:fbb_showShadow="true" />
+
+    <view
+        android:id="@+id/android_fab_with_circular_progress_ring_top_right"
+        class="mbanje.kurt.fabbutton.FabButton"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:color="?attr/colorPrimaryDark"
+        android:indeterminate="false"
+        android:indeterminateDuration="1000"
+        android:max="100"
+        android:progress="85"
+        android:src="@drawable/james"
+        android:visibility="visible"
+        app:fbb_autoStart="true"
+        app:fbb_endBitmap="@drawable/ic_fab_complete"
+        app:fbb_hideProgressOnComplete="true"
+        app:fbb_progressColor="#ff00"
+        app:fbb_progressWidthRatio="0.1"
+        app:fbb_showEndBitmap="false"
+        app:fbb_showShadow="true" />
+
+
+
+</RelativeLayout>

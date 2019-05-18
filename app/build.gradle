@@ -31,5 +31,7 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     implementation 'org.jetbrains:annotations-java5:15.0'
 
+    implementation 'mbanje.kurt:fabbutton:1.+'
+
 
 }
