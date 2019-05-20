@@ -3,54 +3,260 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
-    android:padding="5dp"
-
-    android:layout_margin="16dp">
-    <view
-        android:id="@+id/android_fab_with_circular_progress_ring"
-        class="mbanje.kurt.fabbutton.FabButton"
-        android:layout_width="@dimen/button_size"
-        android:layout_height="@dimen/button_size"
-        android:clickable="true"
-        android:color="?attr/colorPrimaryDark"
-        android:indeterminate="false"
-        android:indeterminateDuration="1000"
-        android:max="100"
-        android:progress="80"
-        android:src="@drawable/james"
-        android:visibility="visible"
-
-        app:fbb_autoStart="true"
-        app:fbb_endBitmap="@drawable/ic_fab_complete"
-        app:fbb_hideProgressOnComplete="false"
-        app:fbb_progressColor="#ff00"
-        app:fbb_progressWidthRatio="0.1"
-        app:fbb_showEndBitmap="false"
-        app:fbb_showShadow="true" />
-
-    <view
-        android:id="@+id/android_fab_with_circular_progress_ring_top_right"
-        class="mbanje.kurt.fabbutton.FabButton"
-        android:layout_width="@dimen/button_size"
-        android:layout_height="@dimen/button_size"
-        android:layout_alignParentRight="true"
-        android:clickable="true"
-        android:color="?attr/colorPrimaryDark"
-        android:indeterminate="false"
-        android:indeterminateDuration="1000"
-        android:max="100"
-        android:progress="85"
-        android:src="@drawable/james"
-        android:visibility="visible"
-        app:fbb_autoStart="true"
-        app:fbb_endBitmap="@drawable/ic_fab_complete"
-        app:fbb_hideProgressOnComplete="true"
-        app:fbb_progressColor="#ff00"
-        app:fbb_progressWidthRatio="0.1"
-        app:fbb_showEndBitmap="false"
-        app:fbb_showShadow="true" />
+    android:layout_margin="16dp"
+    android:background="#fff"
+    android:padding="5dp">
 
 
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.sample.program.sample_array_functions.Custom.MyTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INDIAS BIGGEST " />
+
+            <com.sample.program.sample_array_functions.Custom.MyTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FANTASY " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <com.sample.program.sample_array_functions.Custom.MyTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PREDICTION SITE " />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/ll_title"
+        android:id="@+id/ll_progressSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:weightSum="3">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <view
+                android:id="@+id/android_fab_with_circular_progress_ring"
+                class="mbanje.kurt.fabbutton.FabButton"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:clickable="true"
+                android:color="?attr/colorPrimaryDark"
+                android:indeterminate="false"
+                android:indeterminateDuration="1000"
+                android:max="100"
+                android:progress="80"
+                android:src="@drawable/james"
+                android:visibility="visible"
+
+                app:fbb_autoStart="true"
+                app:fbb_endBitmap="@drawable/ic_fab_complete"
+                app:fbb_hideProgressOnComplete="false"
+                app:fbb_progressColor="#ff00"
+                app:fbb_progressWidthRatio="0.1"
+                app:fbb_showEndBitmap="false"
+                app:fbb_showShadow="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <view
+                android:id="@+id/android_fab_with_circular_progress_ring_top_right"
+                class="mbanje.kurt.fabbutton.FabButton"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:color="?attr/colorPrimaryDark"
+                android:indeterminate="false"
+                android:indeterminateDuration="1000"
+                android:max="100"
+                android:progress="85"
+                android:src="@drawable/james"
+
+                android:visibility="visible"
+                app:fbb_autoStart="true"
+                app:fbb_endBitmap="@drawable/ic_fab_complete"
+                app:fbb_hideProgressOnComplete="true"
+                app:fbb_progressColor="#ff00"
+                app:fbb_progressWidthRatio="0.1"
+                app:fbb_showEndBitmap="false"
+                app:fbb_showShadow="true" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <view
+
+                class="mbanje.kurt.fabbutton.FabButton"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:color="?attr/colorPrimaryDark"
+                android:indeterminate="false"
+                android:indeterminateDuration="1000"
+                android:max="100"
+                android:progress="85"
+                android:src="@drawable/james"
+
+                android:visibility="visible"
+                app:fbb_autoStart="true"
+                app:fbb_endBitmap="@drawable/ic_fab_complete"
+                app:fbb_hideProgressOnComplete="true"
+                app:fbb_progressColor="#ff00"
+                app:fbb_progressWidthRatio="0.1"
+                app:fbb_showEndBitmap="false"
+                app:fbb_showShadow="true" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.sample.program.sample_array_functions.Custom.MyEditTextLight
+            android:id="@+id/txt_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.sample.program.sample_array_functions.Custom.MyEditTextLight
+            android:id="@+id/txt_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_progressSection">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="30dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:drawableTint="#FF4081"
+                        android:hint="User Name"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:drawableTint="#FF4081"
+
+                        android:hint="Password"
+                        android:inputType="numberPassword"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingTop="5dp"
+                    android:text="Forgot Password?" />
+
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="22dp"
+                    android:background="#fff"
+                    android:text="Sign in"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
 </RelativeLayout>
+
+
+
+
