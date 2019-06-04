@@ -15,7 +15,6 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,7 +22,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.sample.program.sample_array_functions.MainActivity">
+        <activity android:name=".ChitsActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".PasscodeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,242 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/mainred">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="45dp"
+                    android:layout_height="45sp"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_very_small"
+                    android:padding="@dimen/padding_small"/>
+                   <!-- android:src="@drawable/back"-->
+
+
+                <com.sample.program.sample_array_functions.Custom.MyTextViewBold
+                    android:id="@+id/toolbartitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:text="Login"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_large" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/otpshade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e5e5e5"
+            android:visibility="gone">
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="Enter the 4 Digit Code send to"
+                android:textColor="#000"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tv_currentnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Please enter your verfication code"
+                android:textColor="#000"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edt_testfirstdigit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="0 0 0 0"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textSize="20dp">
+
+                    <requestFocus></requestFocus>
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pin_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.sample.program.sample_array_functions.Custom.MyEditTextLight
+                    android:id="@+id/edt_firstdigit"
+                    style="@style/pin_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:inputType="number" />
+
+                <com.sample.program.sample_array_functions.Custom.MyEditTextLight
+                    android:id="@+id/edt_seconddigit"
+                    style="@style/pin_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+
+                    android:inputType="number" />
+
+                <com.sample.program.sample_array_functions.Custom.MyEditTextLight
+                    android:id="@+id/edt_thirddigit"
+                    style="@style/pin_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+
+                    android:inputType="number" />
+
+                <com.sample.program.sample_array_functions.Custom.MyEditTextLight
+                    android:id="@+id/edt_fourthdigit"
+                    style="@style/pin_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/pin_hidden_edittext"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:gravity="center_horizontal"
+                android:maxLength="5"
+                android:password="true"
+                android:textColor="#00000000" />
+
+
+            <Button
+                android:id="@+id/btn_Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:textAllCaps="true"
+                android:text="Login"
+                android:visibility="gone"
+                android:textColor="@color/white" />
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+           android:gravity="center"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:id="@+id/iv_ChefLogo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+               android:visibility="gone"
+                 />
+
+
+            <com.sample.program.sample_array_functions.Custom.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+android:visibility="visible"
+                android:gravity="center|top"
+                android:layout_marginStart="@dimen/margin_small"
+                android:text="Verification code"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_mega" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>
+

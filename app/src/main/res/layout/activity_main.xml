@@ -3,17 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="16dp"
-    android:background="#fff"
+    android:background="#000"
     android:padding="5dp">
+
+
+
+
+
 
 
     <LinearLayout
         android:id="@+id/ll_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,13 +55,13 @@
 
 
     <LinearLayout
-        android:layout_below="@+id/ll_title"
         android:id="@+id/ll_progressSection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        android:visibility="invisible"
+        android:visibility="gone"
         android:weightSum="3">
 
 
@@ -77,7 +83,7 @@
                 android:indeterminateDuration="1000"
                 android:max="100"
                 android:progress="80"
-                android:src="@drawable/james"
+                android:src="@drawable/test"
                 android:visibility="visible"
 
                 app:fbb_autoStart="true"
@@ -107,7 +113,7 @@
                 android:indeterminateDuration="1000"
                 android:max="100"
                 android:progress="85"
-                android:src="@drawable/james"
+                android:src="@drawable/test"
 
                 android:visibility="visible"
                 app:fbb_autoStart="true"
@@ -138,7 +144,7 @@
                 android:indeterminateDuration="1000"
                 android:max="100"
                 android:progress="85"
-                android:src="@drawable/james"
+                android:src="@drawable/test"
 
                 android:visibility="visible"
                 app:fbb_autoStart="true"
@@ -183,6 +189,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:layout_below="@+id/ll_progressSection">
 
 
