@@ -10,15 +10,10 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
-import android.graphics.Color;
-import android.graphics.Typeface;
-import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.provider.Settings;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutCompat;
 import android.support.v7.widget.ListPopupWindow;
@@ -28,7 +23,6 @@ import android.text.style.URLSpan;
 import android.util.Base64;
 import android.util.DisplayMetrics;
 import android.util.Log;
-import android.util.Patterns;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
@@ -36,10 +30,10 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.sample.program.sample_array_functions.Constants.StringConstants;
 import com.sample.program.sample_array_functions.Custom.MyEditTextLight;
 import com.sample.program.sample_array_functions.Custom.MyTextViewBold;
 import com.sample.program.sample_array_functions.Custom.MyTextViewMedium;
@@ -62,8 +56,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 import java.util.TimeZone;
-
-import javax.sql.DataSource;
 
 public class CommonUtils {
     private static final String TAG = "CommonUtil";

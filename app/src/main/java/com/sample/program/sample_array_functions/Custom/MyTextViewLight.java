@@ -1,4 +1,4 @@
-package com.sample.program.radiusdirect.Custom;
+package com.sample.program.sample_array_functions.Custom;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

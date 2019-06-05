@@ -38,7 +38,7 @@
     <dimen name="text_mega">20sp</dimen>
 
 
-   <!-- Availablity screen-->
+    <!-- Availablity screen-->
     <dimen name="product_arrow_width">35dp</dimen>
     <dimen name="product_arrow_height">25dp</dimen>
     <dimen name="Status_border_height">2dp</dimen>

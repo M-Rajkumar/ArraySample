@@ -1,10 +1,12 @@
-package com.sample.program.sample_array_functions;
+package com.sample.program.sample_array_functions.Activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
+
+import com.sample.program.sample_array_functions.Fragment.MainFragment;
+import com.sample.program.sample_array_functions.R;
 
 public class PasscodeActivity extends AppCompatActivity {
 
@@ -14,7 +16,7 @@ public class PasscodeActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.container, new MainFragment())
                 .commit();
-        Toast.makeText(PasscodeActivity.this, "Passcode: 1234", Toast.LENGTH_LONG).show();
+        //Toast.makeText(PasscodeActivity.this, "Passcode: 1234", Toast.LENGTH_LONG).show();
     }
 
     @Override public boolean onCreateOptionsMenu(Menu menu) {

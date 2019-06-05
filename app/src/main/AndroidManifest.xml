@@ -22,10 +22,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChangePasswordActivity"></activity>
+        <activity
+            android:name=".Main.LauncherActivity"
+            android:label="@string/title_activity_launcher"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Activity.BaseActivity" />
+        <activity android:name=".Activity.ChangePasswordActivity" />
         <activity android:name=".ChitsActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".PasscodeActivity">
+        <activity android:name=".Activity.PasscodeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
