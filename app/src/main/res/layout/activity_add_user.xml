@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sample.program.sample_array_functions.Activity.AddUserActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:elevation="0dp"
+                android:orientation="horizontal"
+                android:weightSum="8">
+
+                <ImageView
+                    android:id="@+id/toolbarlefticon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_large" />
+
+                <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+                    android:id="@+id/toolbartitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Add User"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_large" />
+
+
+                <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+                    android:id="@+id/profiledone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_small"
+                    android:text="Done"
+                    android:textColor="@color/maincolor"
+                    android:textSize="@dimen/text_medium"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/maincolor" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background">
+
+
+            <ImageView
+                android:id="@+id/profilepic"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:padding="@dimen/padding_small" />
+
+            <ImageView
+                android:id="@+id/changeprofilepic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/changeprofileicon"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_small"
+            android:background="@drawable/button_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_small"
+                android:visibility="invisible">
+
+
+                <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:padding="@dimen/padding_small"
+                    android:text="Enter loan amount"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_mega" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/text_small"
+                    android:background="@drawable/button_background"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_rupees"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+
+                        android:layout_marginStart="15dp"
+                        android:layout_toStartOf="@+id/login_email"
+                        android:padding="@dimen/margin_extra_very_small"
+                        android:src="@drawable/rupeesympol"
+                        android:visibility="visible" />
+
+                    <com.sample.program.sample_array_functions.Custom.MyEditTextLight
+                        android:id="@+id/login_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="@string/edt_amount"
+                        android:padding="@dimen/padding_very_small"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/text_medium"
+
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_small"
+                android:visibility="invisible">
+
+
+                <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:padding="@dimen/padding_small"
+                    android:text="Enter customer name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_mega" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/text_small"
+                    android:background="@drawable/button_background"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/icon_logo"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+
+                        android:layout_marginStart="15dp"
+                        android:layout_toStartOf="@+id/customer_name"
+                        android:padding="@dimen/margin_extra_very_small"
+                        android:src="@drawable/rupeesympol"
+                        android:visibility="visible" />
+
+                    <com.sample.program.sample_array_functions.Custom.MyEditTextLight
+                        android:id="@+id/customer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="@string/edt_amount"
+                        android:padding="@dimen/padding_very_small"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/text_medium"
+
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+
+        android:layout_marginEnd="@dimen/margin_small"
+        android:background="@drawable/button_background"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+            android:id="@+id/txt_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="start"
+            android:padding="@dimen/padding_very_large"
+            android:text="Select type"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small"
+            android:visibility="invisible" />
+
+        <com.sample.program.sample_array_functions.Custom.MyEditTextLight
+            android:id="@+id/days"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/txt_type"
+            android:layout_weight="1.3"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="-- % --"
+            android:padding="@dimen/padding_very_small"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/text_medium"
+            android:visibility="invisible"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:visibility="invisible"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_small">
+
+
+                <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text="Enter how many weeks you want?"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_mega"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/text_small"
+                    android:background="@drawable/button_background"
+                    android:gravity="center">
+
+                    <ImageView
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+
+                        android:layout_marginStart="15dp"
+                        android:layout_toStartOf="@+id/weeks"
+                        android:padding="@dimen/margin_extra_very_small"
+                        android:src="@drawable/rupeesympol"
+                        android:visibility="visible" />
+
+                    <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+                        android:id="@+id/weeks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="@string/edt_amount"
+                        android:padding="@dimen/padding_very_small"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/text_medium"
+
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

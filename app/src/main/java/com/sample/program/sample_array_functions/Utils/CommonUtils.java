@@ -488,7 +488,7 @@ public class CommonUtils {
         if (str == null) {
             return false;
         }
-        if (str.length() == 0) {
+        if(str.length() == 0) {
             return false;
         } else {
             return true;
