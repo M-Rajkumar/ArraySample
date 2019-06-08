@@ -313,9 +313,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_medium"
-                android:visibility="invisible"
                 android:orientation="vertical"
-                android:padding="@dimen/padding_small">
+                android:padding="@dimen/padding_small"
+                android:visibility="visible">
 
 
                 <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
@@ -326,8 +326,7 @@
                     android:padding="@dimen/padding_small"
                     android:text="Enter how many weeks you want?"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/text_mega"
-                    />
+                    android:textSize="@dimen/text_mega" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -338,15 +337,14 @@
                     android:gravity="center">
 
                     <ImageView
-
+                        android:id="@+id/leftarrow"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_centerInParent="true"
-
                         android:layout_marginStart="15dp"
                         android:layout_toStartOf="@+id/weeks"
                         android:padding="@dimen/margin_extra_very_small"
-                        android:src="@drawable/rupeesympol"
+                        android:src="@drawable/icon_arrow_left"
                         android:visibility="visible" />
 
                     <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
@@ -355,13 +353,25 @@
                         android:layout_height="wrap_content"
                         android:background="@null"
                         android:gravity="center"
-                        android:hint="@string/edt_amount"
+                       android:text="1"
                         android:padding="@dimen/padding_very_small"
                         android:textColor="@color/white"
                         android:textColorHint="@color/white"
                         android:textSize="@dimen/text_medium"
 
                         />
+
+
+                    <ImageView
+                        android:id="@+id/rightarrow"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+
+                        android:layout_toEndOf="@+id/weeks"
+                        android:padding="@dimen/margin_extra_very_small"
+                        android:src="@drawable/icon_arrow_right"
+                        android:visibility="visible" />
 
 
                 </RelativeLayout>
@@ -371,6 +381,20 @@
         </RelativeLayout>
 
     </LinearLayout>
+
+
+    <com.sample.program.sample_array_functions.Custom.MyTextViewStyleFont
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:minWidth="250dp"
+        android:text="Finish"
+        android:textAllCaps="false"
+        android:textColor="@color/maingray"
+        android:textSize="@dimen/product_arrow_width" />
 
 
 </LinearLayout>

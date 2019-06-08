@@ -5,9 +5,9 @@
             <!--make a gradient background-->
             <gradient
                 android:type="linear"
-                android:startColor="@color/maincolor"
-                android:endColor="@color/maincolor"
-                android:centerColor="@color/maincolor"
+                android:startColor="@color/detailgray"
+                android:endColor="@color/detailgray"
+                android:centerColor="@color/detailgray"
                 android:angle="90"
                 android:gradientRadius="90"
                 />
