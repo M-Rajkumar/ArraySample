@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_large">
+
+    <!-- android:background="@drawable/button_background"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:background="@color/maingray"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingBottom="@dimen/padding_small">
+
+
+            <ImageView
+                android:id="@+id/profilepic"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/padding_small"
+                android:src="@drawable/james" />
+
+            <ImageView
+                android:id="@+id/changeprofilepic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/changeprofileicon"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_userimg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="@dimen/margin_extra_very_small"
+                        android:src="@drawable/settings"
+                        android:visibility="visible" />
+
+                    <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/text_small"
+                        android:layout_toRightOf="@+id/iv_userimg"
+android:singleLine="true"
+                        android:layout_centerInParent="true"
+                        android:text="User name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_date"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="@dimen/margin_extra_very_small"
+                        android:src="@drawable/icon_calender"
+                        android:visibility="visible" />
+
+                    <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+                        android:id="@+id/totalDates"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/text_small"
+                        android:layout_toRightOf="@+id/iv_date"
+                        android:text="No of dates"
+                        android:layout_centerInParent="true"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_amount"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="@dimen/margin_extra_very_small"
+                        android:src="@drawable/rupee"
+                        android:visibility="visible" />
+
+                    <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+                        android:id="@+id/totalAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/text_small"
+                        android:layout_toRightOf="@+id/iv_amount"
+                        android:singleLine="true"
+                        android:layout_centerInParent="true"
+                        android:text="Amount"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_endDate"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="@dimen/margin_extra_very_small"
+                        android:src="@drawable/icon_calender"
+                        android:visibility="visible" />
+
+                    <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+                        android:id="@+id/endDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/text_small"
+                        android:layout_toRightOf="@+id/iv_endDate"
+                        android:singleLine="true"
+                        android:text="End date"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_small"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/ivPig"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="@dimen/padding_small"
+                        android:src="@drawable/james" />
+
+                    <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+                        android:id="@+id/settledAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/text_small"
+                        android:layout_below="@+id/ivPig"
+                        android:singleLine="true"
+                        android:visibility="visible"
+                        android:text="10000 /-"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

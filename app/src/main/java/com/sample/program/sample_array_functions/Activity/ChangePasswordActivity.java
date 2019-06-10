@@ -38,6 +38,13 @@ public class ChangePasswordActivity extends BaseActivity implements View.OnClick
         setContentView(R.layout.activity_change_password);
         initview();
         listeners();
+
+        /*fd
+        * My brother was admited in aristo hospital, so i need 2hours permission (2pm - 4pm) to visit him.
+        *
+        *
+        *
+        * */
     }
 
     private void initview() {

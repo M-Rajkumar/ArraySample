@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:elevation="0dp"
+                android:orientation="horizontal"
+                android:weightSum="8">
+
+                <ImageView
+                    android:id="@+id/toolbarlefticon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_large" />
+
+                <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+                    android:id="@+id/toolbartitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Add User Details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_large" />
+
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/maincolor" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/profilepic"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/james"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:padding="@dimen/padding_small" />
+
+                <ImageView
+                    android:id="@+id/changeprofilepic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/changeprofileicon" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:padding="@dimen/padding_small">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            tools:ignore="UselessParent">
+
+          
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/curvedgraybg">
+
+
+                <com.sample.program.sample_array_functions.Custom.MyEditTextLight
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:background="@color/transparent"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:maxLength="45"
+                    android:padding="@dimen/padding_very_small"
+                    android:textSize="@dimen/text_medium"
+                    tools:ignore="TextFields" />
+
+               
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            tools:ignore="UselessParent">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/curvedgraybg">
+
+
+                <com.sample.program.sample_array_functions.Custom.MyEditTextLight
+                    android:id="@+id/user_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:background="@color/transparent"
+                    android:hint="Phone Number"
+                    android:inputType="text"
+                    android:maxLength="45"
+                    android:padding="@dimen/padding_very_small"
+                    android:textSize="@dimen/text_medium"
+                    tools:ignore="TextFields" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            tools:ignore="UselessParent">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/curvedgraybg">
+
+
+                <com.sample.program.sample_array_functions.Custom.MyEditTextLight
+                    android:id="@+id/user_phone_alternate"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:background="@color/transparent"
+                    android:hint="Phone Number Alternate"
+                    android:inputType="text"
+                    android:maxLength="45"
+                    android:padding="@dimen/padding_very_small"
+                    android:textSize="@dimen/text_medium"
+                    tools:ignore="TextFields" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            tools:ignore="UselessParent">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/curvedgraybg">
+
+
+                <com.sample.program.sample_array_functions.Custom.MyEditTextLight
+                    android:id="@+id/user_address"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:layout_height="100.5dp"
+                    android:background="@color/transparent"
+                    android:hint="Address"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_very_small"
+                    android:textSize="@dimen/text_medium"
+                    tools:ignore="TextFields" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        
+        
+        
+    </LinearLayout>
+
+    <com.sample.program.sample_array_functions.Custom.MyTextViewBold
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:minWidth="250dp"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_medium" />
+    
+    
+
+
+
+   
+    
+    
+</LinearLayout>

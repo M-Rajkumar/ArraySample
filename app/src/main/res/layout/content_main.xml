@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="visible"
+        android:background="@color/white"
         app:elevation="0dp">
 
         <android.support.v7.widget.Toolbar
@@ -30,6 +31,7 @@
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/padding_extra_very_small"
+                    android:visibility="invisible"
                     android:src="@drawable/test" />
 
                 <ImageView
@@ -105,11 +107,11 @@
         android:background="@color/greyselect" />
 
     <LinearLayout
-        android:visibility="gone"
+        android:visibility="visible"
         android:id="@+id/bottomnavigation"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbarlayout"
         android:orientation="vertical">
 
         <android.support.v7.widget.RecyclerView

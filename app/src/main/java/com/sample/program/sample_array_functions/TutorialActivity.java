@@ -12,14 +12,9 @@ import java.util.ArrayList;
 public class TutorialActivity extends AppCompatActivity implements View.OnClickListener {
 
     Activity mActivity;
-
     ArrayList txtone_array, txttwo_array;
-
     ArrayList<tutorial_domain> tutorial_domains;
-
     tutorial_domain tutorial_model;
-
-
     RecyclerView recycler;
     TutorialAdapter mTutorialadapter;
 

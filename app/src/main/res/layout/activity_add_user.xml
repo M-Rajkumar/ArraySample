@@ -178,16 +178,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:background="@drawable/button_background"
         android:layout_marginStart="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_small"
         android:layout_marginEnd="@dimen/margin_small"
         android:orientation="horizontal">
 
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_background">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -195,60 +194,122 @@
                 android:layout_marginTop="@dimen/margin_medium"
                 android:orientation="vertical"
                 android:padding="@dimen/padding_small"
-                android:visibility="invisible">
+                android:visibility="visible">
 
+                
 
-                <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-
-                    android:padding="@dimen/padding_small"
-                    android:text="Enter customer name"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/text_mega" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/text_small"
-                    android:background="@drawable/button_background"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/icon_logo"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerInParent="true"
-
-                        android:layout_marginStart="15dp"
-                        android:layout_toStartOf="@+id/customer_name"
-                        android:padding="@dimen/margin_extra_very_small"
-                        android:src="@drawable/rupeesympol"
-                        android:visibility="visible" />
-
-                    <com.sample.program.sample_array_functions.Custom.MyEditTextLight
-                        android:id="@+id/customer_name"
-                        android:layout_width="wrap_content"
+                <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@null"
-                        android:gravity="center"
-                        android:hint="@string/edt_amount"
-                        android:padding="@dimen/padding_very_small"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white"
-                        android:textSize="@dimen/text_medium"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        >
 
+
+                        <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:layout_height="37.5dp"
+                            android:text="Name "
+                            android:textColor="@color/black"
+                            android:padding="@dimen/padding_very_small"
+                            android:textSize="@dimen/text_medium"
+                            />
+
+
+                        <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="37.5dp"
+                            android:text="Kannan"
+                            android:inputType="text"
+                            android:maxLength="45"
+                            android:textColor="@color/black"
+                            android:padding="@dimen/padding_very_small"
+                            android:textSize="@dimen/text_medium"
+                             />
+
+                       
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+
+
+                    <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="37.5dp"
+                        android:text="Phone No"
+                        android:textColor="@color/black"
+                        android:padding="@dimen/padding_very_small"
+                        android:textSize="@dimen/text_medium"
                         />
 
 
-                </RelativeLayout>
+                    <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="37.5dp"
+                        android:text="8978785254"
+                        android:inputType="text"
+                        android:maxLength="45"
+                        android:textColor="@color/black"
+                        android:padding="@dimen/padding_very_small"
+                        android:textSize="@dimen/text_medium"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+
+
+                    <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="37.5dp"
+                        android:text="Address "
+                        android:textColor="@color/black"
+                        android:padding="@dimen/padding_very_small"
+                        android:textSize="@dimen/text_medium"
+                        />
+
+
+                    <com.sample.program.sample_array_functions.Custom.MyTextViewMedium
+
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="37.5dp"
+                        android:text="Kannan"
+                        android:inputType="text"
+                        android:maxLength="45"
+                        android:textColor="@color/black"
+                        android:padding="@dimen/padding_very_small"
+                        android:textSize="@dimen/text_medium"
+                        />
+
+
+                </LinearLayout>
+
+
+             
+                
+
+              
 
             </LinearLayout>
 
-        </RelativeLayout>
+
 
     </LinearLayout>
 
