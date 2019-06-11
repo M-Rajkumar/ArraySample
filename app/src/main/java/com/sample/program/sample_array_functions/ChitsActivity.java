@@ -26,7 +26,7 @@ public class ChitsActivity extends AppCompatActivity implements View.OnFocusChan
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chits);
+        setContentView(R.layout.activity_login_withcode);
         mActivity=this;
         initmethod();
     }
