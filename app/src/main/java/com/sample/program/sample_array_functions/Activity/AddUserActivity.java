@@ -1,6 +1,7 @@
 package com.sample.program.sample_array_functions.Activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 
 import com.sample.program.sample_array_functions.Custom.MyEditTextLight;
 import com.sample.program.sample_array_functions.Custom.MyTextViewMedium;
+import com.sample.program.sample_array_functions.Custom.MyTextViewStyleFont;
 import com.sample.program.sample_array_functions.R;
 import com.sample.program.sample_array_functions.Utils.CommonUtils;
 
@@ -20,7 +22,8 @@ public class AddUserActivity extends BaseActivity implements View.OnClickListene
     MyTextViewMedium txt_type,weeks;
     Activity mActivity;
     MyEditTextLight days;
-    ImageView leftArrow,rightArrow;
+    ImageView leftArrow,rightArrow,profilepic;
+    MyTextViewStyleFont finish_button;
 
 
 
@@ -41,9 +44,12 @@ public class AddUserActivity extends BaseActivity implements View.OnClickListene
     private void initView() {
         txt_type = (MyTextViewMedium) findViewById(R.id.txt_type);
         weeks = (MyTextViewMedium) findViewById(R.id.weeks);
+        finish_button = (MyTextViewStyleFont) findViewById(R.id.finish_button);
         days = (MyEditTextLight) findViewById(R.id.days);
         leftArrow = (ImageView) findViewById(R.id.leftarrow);
         rightArrow = (ImageView) findViewById(R.id.rightarrow);
+        profilepic = (ImageView) findViewById(R.id.profilepic);
+        profilepic.setOnClickListener(this);
         leftArrow.setOnClickListener(this);
         rightArrow.setOnClickListener(this);
         txt_type.addTextChangedListener(new TextWatcher() {
@@ -110,6 +116,18 @@ public class AddUserActivity extends BaseActivity implements View.OnClickListene
 
                 break;
 
+            }
+
+            case R.id.profilepic:{
+               /* Intent intent= new Intent(AddUserActivity.this,DashboardActivity.class);
+                startActivity(intent);*/
+                break;
+            }
+
+            case R.id.finish_button:{
+                Intent intent= new Intent(AddUserActivity.this,DashboardActivity.class);
+                startActivity(intent);
+                break;
             }
         }
 

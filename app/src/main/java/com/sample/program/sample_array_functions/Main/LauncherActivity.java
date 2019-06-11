@@ -1,6 +1,7 @@
 package com.sample.program.sample_array_functions.Main;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.view.GravityCompat;
@@ -12,7 +13,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.sample.program.sample_array_functions.Activity.AddUserActivity;
 import com.sample.program.sample_array_functions.Activity.BaseActivity;
+import com.sample.program.sample_array_functions.Activity.ChangePasswordActivity;
 import com.sample.program.sample_array_functions.R;
 
 import java.util.ArrayList;
@@ -43,8 +46,7 @@ public class LauncherActivity extends BaseActivity implements View.OnClickListen
 
     private void initview() {
         setSupportActionBar(toolbar);
-
-         fab = findViewById(R.id.fab);
+        fab = findViewById(R.id.fab);
         navicon = findViewById(R.id.navicon);
         drawer = findViewById(R.id.drawer_layout);
         drawerrecycler = findViewById(R.id.drawer_recycler);
@@ -54,13 +56,6 @@ public class LauncherActivity extends BaseActivity implements View.OnClickListen
         navicon.setOnClickListener(this);
         fab.setOnClickListener(this);
 
-        /*fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
     }
 
 
@@ -117,7 +112,7 @@ public class LauncherActivity extends BaseActivity implements View.OnClickListen
         grouplist.add(new DrawerGroupDomain(1, sec1));
 
         ArrayList<DrawerItemDomain> sec2 = new ArrayList<>();
-        sec2.add(new DrawerItemDomain(R.drawable.settings, "Settings"));
+        sec2.add(new DrawerItemDomain(R.drawable.settings, "Change Password"));
 //        sec2.add(new DrawerItemDomain(R.drawable.sidenotification, "Notifications"));
         grouplist.add(new DrawerGroupDomain(2, sec2));
 
@@ -141,6 +136,8 @@ public class LauncherActivity extends BaseActivity implements View.OnClickListen
                 break;
 
             case R.id.fab:
+                Intent intent=new Intent(LauncherActivity.this, AddUserActivity.class);
+                startActivity(intent);
                 break;
 
         }
@@ -149,6 +146,14 @@ public class LauncherActivity extends BaseActivity implements View.OnClickListen
 
     @Override
     public void clickedsideitem(String s) {
+
+        drawer.closeDrawer(GravityCompat.START);
+        switch (s) {
+
+            case "Change Password":
+                startActivity(new Intent(LauncherActivity.this, ChangePasswordActivity.class));
+                break;
+        }
 
     }
 }

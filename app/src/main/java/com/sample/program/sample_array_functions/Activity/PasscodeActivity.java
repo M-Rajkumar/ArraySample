@@ -1,14 +1,13 @@
 package com.sample.program.sample_array_functions.Activity;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.sample.program.sample_array_functions.Fragment.MainFragment;
 import com.sample.program.sample_array_functions.R;
 
-public class PasscodeActivity extends AppCompatActivity {
+public class PasscodeActivity extends BaseActivity {
 
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

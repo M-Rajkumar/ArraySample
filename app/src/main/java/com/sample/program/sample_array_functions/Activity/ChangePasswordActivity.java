@@ -237,6 +237,7 @@ public class ChangePasswordActivity extends BaseActivity implements View.OnClick
             editor.putString(StringConstants.PREF_PASSCODE,newpasstxt);
             editor.commit();
             Toast.makeText(this, "Changed successfully..", Toast.LENGTH_SHORT).show();
+            finish();
         }
 
 
